@@ -9,6 +9,7 @@
   --primaryColor: #4169e1;
   --boxWhite: #fff;
   --boxBlack: #101010;
+  --boxDarkGray: rgb(30, 30, 30);
   --fontFamily: "Open Sans", sans-serif;
 }
 
@@ -78,7 +79,9 @@ main {
     "servicios servicios servicios"
     "slogan slogan slogan"
     "products products products"
-    "testimonial testimonial testimonial";
+    "testimonial testimonial testimonial"
+    "gamingPc gamingPc gamingPc"
+    "map map map";
 
   gap: 20px;
 }
@@ -350,4 +353,115 @@ main {
 .testimonial p {
   margin-top: 20px;
   text-align: justify;
+}
+
+.gamingPc {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--boxBlack);
+  color: white;
+
+  gap: 20px;
+  grid-area: gamingPc;
+  border-radius: 20px;
+}
+
+.pc {
+  width: 90%;
+  height: 300px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 20px; */
+
+  font-family: var(--fontFamily);
+}
+.pc:nth-child(1) {
+  margin-top: 40px;
+}
+.pc:nth-child(3) {
+  margin-bottom: 40px;
+}
+
+.pc-specs {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  position: relative;
+
+  border-radius: 10px 0 0 10px;
+  background-color: var(--boxDarkGray);
+  padding: 20px;
+
+  color: white;
+}
+
+.pc-edit {
+  border-radius: 0 10px 10px 0;
+}
+
+.pc--title-1,
+.pc--title-3 {
+  width: clamp(110px, 130px, 200px);
+  position: absolute;
+
+  text-align: center;
+  left: 10px;
+  bottom: 10px;
+}
+
+.pc--title-2 {
+  width: clamp(110px, 130px, 200px);
+
+  position: absolute;
+
+  text-align: center;
+  right: 10px;
+  bottom: 10px;
+}
+
+.pc-img {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #fff;
+
+  border-radius: 0 10px 10px 0;
+}
+
+.edit {
+  border-radius: 10px 0 0 10px;
+}
+
+/* Map */
+
+.map {
+  width: 100%;
+  height: 100%;
+
+  grid-area: map;
+}
+
+.map iframe {
+  width: 100%;
+  height: 600px;
+
+  border: none;
+
+  border-radius: 20px;
 }
