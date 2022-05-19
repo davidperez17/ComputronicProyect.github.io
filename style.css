@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,800;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: #4169e1;
+  --boxWhite: #fff;
+  --fontFamily: "Open Sans", sans-serif;
+}
+
+body {
+  width: 90vw;
+  height: 100vh;
+
+  background-color: var(--primaryColor);
+  margin: 0 auto;
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: black;
+  background-color: var(--boxWhite);
+  margin-bottom: 20px;
+  font-family: var(--fontFamily);
+}
+
+nav h1 {
+  text-transform: uppercase;
+  margin-left: 10px;
+  color: black;
+}
+
+nav button {
+  width: 100px;
+  height: 35px;
+  border: 1px solid black;
+  background-color: transparent;
+
+  border-radius: 15px;
+  color: black;
+  font-family: var(--fontFamily);
+}
+
+nav button:nth-child(2) {
+  margin-right: 10px;
+}
+
+main {
+  width: 100%;
+  height: auto;
+
+  display: grid;
+  grid-template-areas:
+    "carrusel carrusel carrusel"
+    "servicios servicios servicios"
+    "slogan slogan slogan"
+    "products products products"
+    "testimonial testimonial testimonial";
+
+  gap: 20px;
+}
+
+.carrousel {
+  width: 95%;
+  height: 250px;
+
+  margin: 10px auto 0 auto;
+
+  grid-area: carrusel;
+
+  animation: carrousel 5s linear infinite;
+}
+
+@keyframes carrousel {
+  0% {
+    background-image: url(./img/pc.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  25% {
+    background-image: url(./img/pc-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  50% {
+    background-image: url(./img/pc-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  75% {
+    background-image: url(./img/pc-4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background-image: url(./img/pc-5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.services {
+  position: relative;
+  width: 100%;
+  height: 650px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  gap: 25px;
+
+  grid-area: servicios;
+
+  bottom: 150px;
+  background-color: var(--boxWhite);
+
+  margin-bottom: -140px;
+  z-index: -1;
+}
+
+.service--item {
+  width: 20%;
+  height: 320px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 60px;
+}
+.item-1,
+.item-2,
+.item-3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.item-1 {
+  background-image: url(./img/Service.jpg);
+}
+.item-2 {
+  background-image: url(./img/products.jpg);
+}
+.item-3 {
+  background-image: url(./img/asesoria.jpg);
+}
+.service--item button {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid white;
+  color: white;
+
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-family: var(--fontFamily);
+
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.slogan {
+  width: 100%;
+  height: 345px;
+
+  background-image: url(./img/slogan.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  grid-area: slogan;
+}
+
+.slogan--container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slogan--container h2 {
+  font-size: 4rem;
+  color: white;
+}
+
+.products {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  grid-area: products;
+  gap: 40px;
+}
+
+.products .item {
+  width: 100%;
+  height: 300px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  background-color: var(--boxWhite);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.item button {
+  position: absolute;
+
+  bottom: 15px;
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.item img {
+  width: 35%;
+  height: auto;
+}
+
+.fa-solid {
+  font-size: 2rem;
+  color: black;
+}
+
+.testimonial {
+  width: 100%;
+  height: 300px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+
+  background-color: var(--boxWhite);
+  font-family: var(--fontFamily);
+
+  grid-area: testimonial;
+}
+
+.testimonial .box {
+  background-color: rgb(239, 239, 239);
+  padding: 20px;
+  margin: 0 20px;
+}
+
+.box--user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 20px;
+}
+
+.box--user img {
+  width: 70px;
+  height: auto;
+
+  border-radius: 50%;
+}
+.testimonial p {
+  margin-top: 20px;
+  text-align: justify;
+}
