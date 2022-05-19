@@ -81,7 +81,9 @@ main {
     "products products products"
     "testimonial testimonial testimonial"
     "gamingPc gamingPc gamingPc"
-    "map map map";
+    "map map map"
+    "form form form"
+    "footer footer footer";
 
   gap: 20px;
 }
@@ -464,4 +466,97 @@ main {
   border: none;
 
   border-radius: 20px;
+}
+
+/* formulario */
+
+.formulario {
+  width: 100%;
+  height: 320px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(./img/Laptop-edit.png);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border-radius: 20px;
+  grid-area: form;
+
+  color: white;
+  font-family: var(--fontFamily);
+}
+
+.form--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  gap: 30px;
+}
+
+form {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 15px;
+}
+
+form input {
+  padding: 20px 30px;
+  border: none;
+}
+
+form button {
+  width: 180px;
+  height: 60px;
+  background-color: var(--primaryColor);
+  color: var(--boxWhite);
+
+  font-size: 1.2rem;
+  /* padding: 20px 30px; */
+  border-radius: 50px;
+  border: none;
+
+  transition: 1s;
+}
+
+form button:hover {
+  opacity: 0.6;
+}
+
+/* Footer */
+
+footer {
+  width: 100%;
+  height: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+  background-color: var(--boxBlack);
+
+  grid-area: footer;
+}
+
+.logos img {
+  width: 40px;
+  height: auto;
+  margin: 0 10px;
+}
+
+footer p {
+  color: white;
 }
