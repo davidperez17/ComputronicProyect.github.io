@@ -614,6 +614,10 @@ footer p {
       "footer";
   }
 
+  .carrousel {
+    height: 100px;
+  }
+
   /* Testomonials */
 
   .testimonial {
