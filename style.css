@@ -596,6 +596,7 @@ footer img {
 }
 
 footer p {
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
   color: white;
 }
 
