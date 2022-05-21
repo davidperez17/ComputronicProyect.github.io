@@ -236,7 +236,7 @@ main {
 
 .slogan--container h2 {
   font-family: var(--fontFamily);
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(2rem, 5vw, 5rem);
   color: white;
 }
 
@@ -612,12 +612,15 @@ footer p {
       "form"
       "footer";
   }
+
   /* Testomonials */
 
   .testimonial {
     flex-direction: column;
     height: auto;
   }
+
+  /* Gaming */
 
   .pc-specs {
     width: 100%;
@@ -628,7 +631,13 @@ footer p {
     flex-direction: column;
   }
 
+  /* Form */
+
   form {
     flex-direction: column;
+  }
+
+  .service--item button {
+    color: black;
   }
 }
