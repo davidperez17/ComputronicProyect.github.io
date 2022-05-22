@@ -613,6 +613,10 @@ footer p {
       "form"
       "footer";
   }
+  .item-2,
+  .item-3 {
+    color: white;
+  }
 
   .carrousel {
     height: 100px;
