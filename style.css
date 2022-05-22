@@ -613,8 +613,18 @@ footer p {
       "form"
       "footer";
   }
-  .item-2,
-  .item-3 {
+  nav {
+    justify-content: center;
+  }
+  nav button {
+    width: 90px;
+  }
+  nav h1 {
+    display: none;
+  }
+
+  .item-2 button,
+  .item-3 button {
     color: white;
   }
 
@@ -646,7 +656,7 @@ footer p {
     flex-direction: column;
   }
 
-  .service--item button {
+  .item-1 button {
     color: black;
   }
 }
