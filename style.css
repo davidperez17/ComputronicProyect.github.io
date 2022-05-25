@@ -29,6 +29,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 
   background-color: var(--boxBlack);
   margin-bottom: 20px;
@@ -159,7 +160,7 @@ main {
 
   grid-area: servicios;
 
-  margin-bottom: -140px;
+  margin-bottom: -150px;
   border-radius: 10px;
 }
 
@@ -293,7 +294,7 @@ main {
 }
 
 .item img {
-  width: clamp(250px, 35%, 300px);
+  width: clamp(180px, 35%, 300px);
   height: auto;
 }
 
@@ -613,8 +614,11 @@ footer p {
       "form"
       "footer";
   }
+
+  /* Barra de Navegación */
+
   nav {
-    justify-content: center;
+    justify-content: space-around;
   }
   nav button {
     width: 90px;
@@ -623,11 +627,23 @@ footer p {
     display: none;
   }
 
+  /* Servicios */
+
+  .service--item button:hover {
+    background-color: transparent;
+    color: initial;
+  }
+
+  .item-1 button {
+    color: black;
+  }
+
   .item-2 button,
   .item-3 button {
     color: white;
   }
 
+  /* Carrousel  */
   .carrousel {
     height: 100px;
   }
@@ -656,7 +672,7 @@ footer p {
     flex-direction: column;
   }
 
-  .item-1 button {
-    color: black;
+  form input {
+    padding: 10px;
   }
 }
