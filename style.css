@@ -427,7 +427,11 @@ main {
   font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
-.pc-specs p {
+li {
+  list-style: none;
+}
+
+ol li {
   font-size: clamp(0.7rem, 1.5vw, 1.2rem);
 }
 
