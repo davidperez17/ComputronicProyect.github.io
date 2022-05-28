@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -297,6 +298,20 @@ main {
 .item img {
   width: clamp(180px, 35%, 300px);
   height: auto;
+}
+
+.item h1 {
+  padding: 10px 20px;
+  background-color: var(--boxDarkGray);
+  color: white;
+
+  border-radius: 20px;
+
+  cursor: pointer;
+}
+
+.item h1::after {
+  content: " 👉🏻";
 }
 
 .fa-solid {
